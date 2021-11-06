@@ -1,9 +1,4 @@
 styles = """
-/*
- * "a love letter💗" v5.2.1
- * for every true lover
- */
-
 body {
   background-color: #1a1c24; color: #fff;
   font-size: 1.0rem; line-height: 1.4;
