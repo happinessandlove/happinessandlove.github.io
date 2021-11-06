@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>生日快乐呀～</title>
+  <link rel="stylesheet" href="./normalize.min.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<audio autoplay = “autoplay” loop="loop" preload="auto"
+            src="./1.mp3" id="backGround">
+      你的浏览器不支持audio标签
+</audio>
+ 
+<script>
+// 触摸屏幕播放音乐
+document.addEventListener('touchstart', function() {
+    document.getElementById('backGround').play()
+})
+// 微信客户端加载完毕，自动播放
+document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('backGround').play()
+})
+ 
+</script>
+<!-- partial -->
+  <script src='./jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
