@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style >
+        body{
+            margin: 0;
+        }
+    </style>
+    <title>💗 🐷🐷倩,happy birthday  💗</title>
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<audio autoplay = “autoplay” loop="loop" preload="auto"
+		    src="./happyChristmas.mp3" id="backGround">
+	      你的浏览器不支持audio标签
+	</audio>
+	 
+	<script>
+	// 触摸屏幕播放音乐
+	document.addEventListener('touchstart', function() {
+	    document.getElementById('backGround').play()
+	})
+	// 微信客户端加载完毕，自动播放
+	document.addEventListener('WeixinJSBridgeReady', function() {
+	    document.getElementById('backGround').play()
+	})
+	</script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
